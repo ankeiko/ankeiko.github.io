@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Debian安装Docker稳定版（官方最新）</title>
+    </head>
+    <body>
+        <h1>Debian安装Docker稳定版（官方最新）</h1>
+        <h2>一、前置准备——更新一下系统的各种软件包</h2>
+        <p>
+            <ul>apt update<br><br>apt full-upgrade</ul>
+        </p>
+        <h2>二、安装Docker（最新版Docker已经包含docker compose）</h2>
+        <ol>
+            <li>移除旧的软件包</li>
+            <p>apt-get remove docker docker-engine docker.io containerd runc</p>
+            <li>下载需要的依赖项</li>
+            <p>apt-get install ca-certificates curl gnupg lsb-release</p>
+            <li>创建一个目录用来存docker仓库的GPG密钥</li>
+            <p>mkdir -p /etc/apt/keyrings</p>
+            <li>下载docker仓库的GPG密钥</li>
+            <p>curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/keyrings/docker.gpg</p>
+            <li>将docker仓库添加到系统的软件源列表中</li>
+            <p>echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.gpg] https://download.docker.com/linux/debian $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null</p>
+            <li>刷新系统的软件源列表</li>
+            <p>apt-get update</p>
+            <li>安装docker</li>
+            <p>apt-get install docker-ce docker-ce-cli containerd.io docker-compose-plugin</p>
+        </ol>
+    </body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+</head>
+  <style>
+        .blue{
+            position:relative;
+            background-color:rgb(120, 189, 241);
+            font-size:37px;
+            font-family: 'Arial Narrow', Arial, sans-serif;
+            text-align: center;
+            color: aliceblue;
+            width: 2em;
+            top:0;
+            padding-bottom: 0.15em;
+            padding-top:0.9em;
+            margin-top: 0%;
+            border-radius: 0.2em;
+        }
+        .yellow{
+            position:absolute;
+            height:0.75em;
+            width: 2em;
+            top:0;
+            left: 0;
+            background-color: rgb(246, 203, 96);
+            border-top-right-radius: 0.2em;
+            border-top-left-radius: 0.2em;
+         
+        }
+        .white{
+            position: absolute;
+            background-color: rgb(254, 254, 254);
+            width: 0.3em;
+            height: 0.5em;
+            left: 0.16em;
+            top: 0.13em;
+            border-radius: 0.2em;
+        }
+        .whites{
+            position: absolute;
+            background-color: rgb(251, 251, 251);
+            width: 0.3em;
+            height: 0.5em;
+            left: 0.62em;
+            top: 0.13em;
+            border-radius: 0.2em;
+        }
+        .whitess{
+            position: absolute;
+            background-color: rgb(253, 247, 247);
+            width: 0.3em;
+            height: 0.5em;
+            left: 1.08em;
+            top: 0.13em;
+            border-radius: 0.2em;
+        }
+        .whitesss{
+            position: absolute;
+            background-color: aliceblue;
+            width: 0.3em;
+            height: 0.5em;
+            left: 1.54em;
+            top: 0.13em;
+            border-radius: 0.2em;
+        }
+        .font{
+            font-size: 30px;
+            position: relative;
+            width: 14em;
+            left: 1em;
+            top: 1em;
+            display:inline;
+        }
+    
+        .flexbox{
+            display:flex;
+            flex-direction:column;
+        }
+        .flexbox .flex1 img{ 
+            flex-direction:column;
+            width: 100vw;
+            flex: 1 1 auto;
+            
+        }
+        .flexbox .flexbox2 .flex3 .font{
+            display: flex;
+            flex-direction:row;
+            width:99vw;
+            height: auto;
+            flex: 1 1 auto;
+            box-sizing: border-box;
+        }
+        .flexbox .flexbox2 .flex2{
+            display: flex;
+            flex-direction:column;
+            width: 100vw;
+            height: auto;
+            flex: 1 1 auto;
+        }
+        .flexbox .flexbox2{
+            display:flex;
+            flex-direction:row;
+        }
+      
+    </style>
+    <body>
+        <div class="flexbox">
+        <div  class="flex1" >
+            <img src="https://bcn.135editor.com/files/images/editor_styles/914d5a26c161623e3f650d92bb1fa069.png"/>    
+            <p></p>
+        </div > 
+        <div class="flexbox2"> 
+        <div  class="flex2" >   
+            <div class="blue">
+            <div class="yellow"></div>
+            <div class="white"></div>
+            <div class="whites"></div>
+            <div class="whitess"></div>
+            <div class="whitesss"></div>
+            <strong>01</strong>
+            </div>
+        </div>
+        <div class="flex3">
+            <div class="font"> 五一出游是大家期待已久的假期，也是许多人解压缓解压力、放松身心的好时机。在外游玩时，大家记得要注意安全，做好旅行攻略。</div>
+            </div >    
+            </div>
+        </div>  
+    </body>
+
+
+
+
+
+
+
+</html>
