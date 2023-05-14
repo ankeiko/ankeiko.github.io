@@ -104,4 +104,4 @@ theme: landscape
 deploy:
   type: git
   repositiory: https://github.com/ankeiko/-.git
-  branch: main
+  branch: master
