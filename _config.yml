@@ -103,5 +103,5 @@ theme: landscape
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repositiory: https://github.com/ankeiko/ankeiko.heox.io.git
+  repositiory: https://github.com/ankeiko/ankeiko.github.io.git
   branch: master
