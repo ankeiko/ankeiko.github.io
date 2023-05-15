@@ -97,11 +97,12 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: inside
+theme: butterfly 
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: git
+  type: gitnpm install hexo-deployer-git --save
+hexo clean && hexo deploy
   repositiory: https://github.com/ankeiko/ankeiko.github.io.git
   branch: origin/main
